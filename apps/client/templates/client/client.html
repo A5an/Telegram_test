@@ -1,0 +1,42 @@
+
+{% extends 'main.html'%}
+
+
+{% block content %}
+    {% load static %}
+    <h1>Client's page</h1>
+    <br>
+
+    <h2>My Google Map</h2>
+    <br>
+    <div id="map"></div>
+
+
+    <div>
+        <div>
+            {% for lobbi in lobbies %}
+                <div>
+                    <h5 onclick="">{{lobbi.id}}>>>> <a href="lobbi/{{lobbi.id}}"> {{lobbi.username.host}}</a></h5>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    {% load static %}
+    <script src="{% static 'client/js/clientLoc.js' %}" ></script>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRO_Mf5n9UDT1fS902Dq38N6Cl5fV9SkM&callback=initMap">
+    </script>
+{% endblock content %}
+    
+    
+    
