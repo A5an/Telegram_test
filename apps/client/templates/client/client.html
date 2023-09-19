@@ -5,10 +5,17 @@
 {% block content %}
     {% load static %}
     <h1>Client's page</h1>
-    <br>
 
     <h2>My Google Map</h2>
     <br>
+
+
+        <p>
+        <label>Adress:</label>
+        <input id="places-autocomplete" type="text" placeholder="Search for a place">
+        </p>
+     
+
     <div id="map"></div>
 
 
@@ -34,8 +41,9 @@
     <script src="{% static 'client/js/clientLoc.js' %}" ></script>
 
     <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRO_Mf5n9UDT1fS902Dq38N6Cl5fV9SkM&callback=initMap">
-    </script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRO_Mf5n9UDT1fS902Dq38N6Cl5fV9SkM&libraries=places&callback=initMap">
+        
+    </script>     
 {% endblock content %}
     
     
