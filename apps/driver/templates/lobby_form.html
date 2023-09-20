@@ -1,15 +1,21 @@
 {% extends 'main.html'%}
-
+{% load widget_tweaks %}
 
 {% block content %}
-    {% load static %}
-    <h1>Driver's page</h1>
+    <form method = 'POST' action="">
+        {% csrf_token %}
+      <p>
+        {{form.host}}
+        {{form.availableSeats}}
+        {{form.currentLoc_lat.as_hidden}}
+        {{form.currentLoc_lng.as_hidden}}
+        {{form.arrivalLoc_lat.as_hidden}}
+        {{form.arrivalLoc_lng.as_hidden}}
+        <input type="submit" value="Submit">
+        </p>
+    </form>
 
-    <h2>My Google Map</h2>
-    <a href="{% url 'create-lobby' %}">Create lobby</a>
-    <br>
-
-        <p>
+    <p>
         <label>Adress:</label>
         <input id="places-autocomplete" type="text" placeholder="Search for a place">
         </p>
@@ -24,4 +30,4 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRO_Mf5n9UDT1fS902Dq38N6Cl5fV9SkM&libraries=places&callback=initMap">
         
     </script>     
-{% endblock content %}
+{% endblock %}

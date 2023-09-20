@@ -21,9 +21,9 @@
 
     <div>
         <div>
-            {% for lobbi in lobbies %}
+            {% for lobby in lobbies %}
                 <div>
-                    <h5 onclick="">{{lobbi.id}}>>>> <a href="lobbi/{{lobbi.id}}"> {{lobbi.username.host}}</a></h5>
+                    <h5>{{lobby.id}} >>>> <a href="lobby/{{lobby.id}}">{{lobby.host.username}}{{lobby.availableSeats}}</a></h5>
                 </div>
             {% endfor %}
         </div>

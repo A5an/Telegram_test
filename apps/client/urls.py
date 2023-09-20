@@ -8,5 +8,5 @@ urlpatterns = [
     path('logout/', views.logoutUser2, name="logout"),
     
     path('', views.client, name = 'client'),
-    path('lobbi/<str:pk>',views.lobbi, name = 'lobbi')
-]
+    path('lobby/<str:pk>',views.lobby, name = 'lobby'),
+        ]

@@ -7,4 +7,5 @@ urlpatterns = [
     path('logout/', views.logoutUser2, name="logout"),
 
     path('', views.driver,  name = 'driver'),
+    path('create-lobby/',views.create_lobby, name = 'create-lobby')
 ]

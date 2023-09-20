@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.client',
     'apps.driver',
     'apps.base',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
