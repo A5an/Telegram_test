@@ -1,0 +1,132 @@
+:root {
+    --lightblue-color: #4E7AEB;
+    --lightgrey-color: #BEBEBE;
+    --white-color: #FFFEFE;
+    --blue-color: #2965FF;
+    --white-color: #FFFFFF;
+    --darkblue-color: #5429FF;
+
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: var(--lightblue-color);
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.btn {
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+}
+.btn.new {
+    font-size: 12px;
+    padding: 4px 16px;
+    border-radius: 10px;
+    background: green;
+}
+.btn.new1 {
+    font-size: 12px;
+    padding: 4px 16px;
+    border-radius: 10px;
+    background: red;
+}
+
+.btn.light {
+    padding: 10px 50px;
+    border-radius: 10px;
+    background: var(--blue-color);
+    margin-bottom: 60px;
+}
+.btn.dark {
+    padding: 10px 50px;
+    border-radius: 10px;
+    background: var(--darkblue-color);
+}
+.btn.diff {
+    font-size: 12px;
+    padding: 4px 16px;
+    border-radius: 10px;
+    background: greenyellow;
+    margin-bottom: 5px;
+}
+.btn.red {
+    padding: 16px 128px;
+    border-radius: 10px;
+    background: red;
+}
+.label h1{
+    font-family: "Quicksand";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 269;
+    color: #FFFFFF;
+}
+.label h2 {
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.sign_up p {
+    font-family: "Quicksand";
+    font-size: 12px;
+    font-weight: 300;
+}
+input[type=text] {
+    padding: 12px 20px;
+}
+.input {
+    position: relative;
+    padding: 16px 128px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.input.pass {
+    margin-bottom: 15px;
+}
+.box {
+    position: absolute;
+    font-weight: 600;
+    font-size: 24px;
+}
+.box .content {
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+.box.passenger {
+    background: #7000FF;
+    border-radius: 20px;
+    left:30%;
+    top: 30%;
+}
+.box.driver {
+    background: #00A3FF;
+    border-radius: 20px;
+    right: 30%;
+    top: 30%;
+}
+ul {
+    list-style-type: none;
+}
+.listlob ul {
+    display: flex;
+    justify-content: center;
+}
+.bginput {
+    background: white;
+    border-radius: 10px;
+    background-size: 50px 50px;
+    background-position: 10px center;
+    padding-left: 40px;
+    margin-top: 10px;
+}

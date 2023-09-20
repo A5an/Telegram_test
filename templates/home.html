@@ -1,14 +1,33 @@
 {% extends 'main.html '%}
 
-
+{% load static %}
 {% block content %}
-    <h1>Who you are</h1>
+    <!--<h1>Who you are</h1>
 
 
     <a href="client/">Client</a>
     <br>
     <br>
     <br>
-    <a href="driver/">Driver</a>
+    <a href="driver/">Driver</a> -->
+    <div class="label">
+        <h1>Are you a Passenger or a Driver?</h1>
+    </div>
+    <div class="box passenger">
+        <div class="content">
+            <img src="{% static 'images/🦆 icon _user_.svg' %}" alt="">
+            <br>
+            <a href="client/" class="btn">Passenger</a>
+        </div>
+        <div class="bg"></div>
+    </div>
+    <div class="box driver">
+        <div class="content">
+            <img src="{% static 'images/Driver.svg' %}" alt="">
+            <br>
+            <br>
+            <a href="driver/" class="btn">Driver</a>
+        </div>
+    </div>
 {% endblock content %}
 
