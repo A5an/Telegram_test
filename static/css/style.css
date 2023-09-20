@@ -107,13 +107,13 @@ input[type=text] {
     background: #7000FF;
     border-radius: 20px;
     left:30%;
-    top: 30%;
+    top: 40%;
 }
 .box.driver {
     background: #00A3FF;
     border-radius: 20px;
     right: 30%;
-    top: 30%;
+    top: 40%;
 }
 ul {
     list-style-type: none;
