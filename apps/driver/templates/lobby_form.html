@@ -4,9 +4,7 @@
 {% block content %}
     <form method = 'POST' action="">
         {% csrf_token %}
-      <p>
-        {{form.host}}
-        {{form.availableSeats}}
+        {{form.as_p}}
         {{form.currentLoc_lat.as_hidden}}
         {{form.currentLoc_lng.as_hidden}}
         {{form.arrivalLoc_lat.as_hidden}}
