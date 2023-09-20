@@ -18,8 +18,9 @@ def client(request):
     
     return render(request,'client/client.html',context)
 
-
+@login_required(login_url='login')
 def lobby(request,pk):
+    host = Lobby.objects.all()
     lobby  = Lobby.objects.get(id=pk)
     context = {'lobby':lobby}
 

@@ -8,20 +8,5 @@
     <h2>My Google Map</h2>
     <a href="{% url 'create-lobby' %}">Create lobby</a>
     <br>
-
-        <p>
-        <label>Adress:</label>
-        <input id="places-autocomplete" type="text" placeholder="Search for a place">
-        </p>
-     
-
-    <div id="map"></div>
-
-    {% load static %}
-    <script src="{% static 'driver/js/driverLoc.js' %}" ></script>
-
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRO_Mf5n9UDT1fS902Dq38N6Cl5fV9SkM&libraries=places&callback=initMap">
-        
-    </script>     
+  
 {% endblock content %}

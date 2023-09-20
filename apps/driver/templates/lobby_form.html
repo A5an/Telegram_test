@@ -5,10 +5,6 @@
     <form method = 'POST' action="">
         {% csrf_token %}
         {{form.as_p}}
-        {{form.currentLoc_lat.as_hidden}}
-        {{form.currentLoc_lng.as_hidden}}
-        {{form.arrivalLoc_lat.as_hidden}}
-        {{form.arrivalLoc_lng.as_hidden}}
         <input type="submit" value="Submit">
         </p>
     </form>
@@ -22,10 +18,10 @@
     <div id="map"></div>
 
     {% load static %}
-    <script src="{% static 'driver/js/driverLoc.js' %}" ></script>
+    <script src="{% static 'client/js/clientLoc.js' %}" ></script>
 
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRO_Mf5n9UDT1fS902Dq38N6Cl5fV9SkM&libraries=places&callback=initMap">
         
-    </script>     
+    </script>         
 {% endblock %}

@@ -11,8 +11,6 @@ function initMap() {
     document.getElementById("places-autocomplete")
   );
 
-  document.getElementById("seats").value = 12345;
-
   infoWindow = new google.maps.InfoWindow();
   const locationButton = document.createElement("button");
 

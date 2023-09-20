@@ -17,7 +17,7 @@ def logoutUser2(request):
 def driver(request):
     return render(request,'driver.html')
 
-
+@login_required(login_url='login')
 def create_lobby(request):
     form = LobbyForm()
     if request.method == 'POST':

@@ -4,5 +4,5 @@ from apps.client.models import Lobby
 class LobbyForm(ModelForm):
     class Meta:
         model = Lobby
-        fields = ['host','availableSeats']
+        fields = ['host','availableSeats', 'arrivalLoc']
     
