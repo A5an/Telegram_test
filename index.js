@@ -97,9 +97,9 @@ app.post('/addBot', async (req, res) => {
         const bot = new TelegramBot(newBotToken, { polling: true });
 
         bot.setMyCommands([
-            //     {command: '/start', description: 'Welcome message Easy life'},
-            //     {command: '/info', description: 'Information about bot'}
-            // ]);
+                {command: '/start', description: 'Welcome message Easy life'},
+                {command: '/info', description: 'Information about bot'}
+            ]);
 
         bot.on('message', async msg => {
             console.log(msg);
